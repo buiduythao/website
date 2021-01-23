@@ -188,6 +188,8 @@
 @media screen and (max-width:767px) {
     #top_header #topbar {
         justify-content: center;
+        padding: 5px 0;
+        border-bottom: 1px solid #808080;
     }
     header #top_header .container .row>.btn_menu {
         display: block;
@@ -206,6 +208,9 @@
     } 
     #banner .banner-content>p {
         text-align: center;
+    }
+    #about-us .info-aboutus {
+        margin-top: 15px;
     }
     #news .blog {
         margin-top: 10px;
@@ -231,6 +236,9 @@
     }
 }
 @media screen and (max-width:575px) {
+    #top_header #logo>a img {
+        width: 100px;
+    }
     #top_header #topbar .topbar__item-info>span:first-child{
        display: none;
     }
@@ -252,16 +260,19 @@
 }
 @media screen and (max-width:480px) {
     header::after {
-       border-left:26px solid transparent;
-       border-right:26px solid transparent;
-       border-bottom:26px solid #ffffff;
+       border-left:27px solid transparent;
+       border-right:27px solid transparent;
+       border-bottom:27px solid #ffffff;
    }
-    #top_header #topbar .topbar__item-info>span:last-child {
-        display: none;
+    
+    #top_header #topbar .topbar_item {
+        display: block;
+        text-align: center;
+        margin: 0 3px;
     }
     #top_header #topbar .topbar_item img {
         width: auto;
-        margin: 0 10px;
+        margin: 0;
     }
     #banner .banner-title>h2 {
         font-size: 25px;
@@ -314,6 +325,13 @@
     }
     .footer_info .contact .register>input {
         padding: 5px;
+    }
+    .row>div {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .footer_info .logo_footer img {
+        width: 130px;
     }
 }
 @media screen and (max-width:414px) {

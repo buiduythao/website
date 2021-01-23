@@ -7,10 +7,21 @@ $('.customer_slider').slick({
     arrows:false
 });
 new WOW().init();
-$(document).ready(function(){
-    $("#next_section").click(function() {
-        $('html, body').animate({
-            scrollTop: $("#about-us").offset().top
-        }, 1000);
-    });
-});
+
+$('#next_section').click(function(){
+    $("html, body").animate(
+        {
+            scrollTop: $($.attr(this,'href')).offset().top
+        }
+        ,200
+        ,"linear"
+    );
+})
+// $('#next_section').click(function(){
+//     var fuller = $(this).closest('.fullscreen').next(),
+//         section = $(this).closest('#service');
+
+//     section.animate({
+//         scrollTop: section.scrollTop() + fuller.offset().top
+//     }, 700);
+// });
